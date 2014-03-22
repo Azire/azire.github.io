@@ -1,0 +1,121 @@
+/*!
+ * Gridpak Beta CSS
+ *
+ * Generator - http://gridpak.com/
+ * Created by @erskinedesign
+ */
+ 
+ 
+
+/* Reusable column setup */
+.col {
+    border:0px solid rgba(0,0,0,0);
+    float:left;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    -moz-background-clip:padding-box !important;
+    -webkit-background-clip:padding-box !important;
+    background-clip:padding-box !important;
+}
+
+
+
+    /* 1. 1 Column Grid 0px - 399px 
+    ----------------------------------------------------------------------------- 
+    
+    Span 1:    100%
+    
+    ----------------------------------------------------------------------------- */
+
+    @media screen and (min-width: 0px) and (max-width: 399px) {
+        
+        .col {
+            margin-left:0%;
+        	padding:0 1.5%;
+        }
+        
+        .row .col:first-child {
+            margin-left:0;
+        }
+        
+        
+        /*
+        Add your semantic classnames in alongside their corresponding spans here. e.g.
+        
+        .span_3,
+        .my_semantic_class_name {
+            ...
+        }
+        */
+        
+        .span_1, .min, .med, .max {
+            margin-left:0;
+            width:100%;
+        }
+    }
+
+    /* 2. 2 Column Grid 400px - 898px 
+    ----------------------------------------------------------------------------- 
+    
+    Span 1:    49.0%
+    Span 2:    100%
+    
+    ----------------------------------------------------------------------------- */
+
+    @media screen and (min-width: 400px) and (max-width: 898px) {
+        
+        .col {
+            margin-left:0%;
+        	padding:0 1.5%;
+        }
+        
+        .row .col:first-child {
+            margin-left:0;
+        }
+        
+        
+        
+        .span_1, .med{
+            width:49.0%;
+        }
+        .span_2 {
+            margin-left:0;
+            width:100%;
+        }
+    }
+
+    /* 3. 3 Column Grid 899px - Infinity 
+    ----------------------------------------------------------------------------- 
+    
+    Span 1:    32.0%
+    Span 2:    66.0%
+    Span 3:    100%
+    
+    ----------------------------------------------------------------------------- */
+
+    @media screen and (min-width: 899px) {
+        
+        .col {
+            margin-left:0%;
+        	padding:0 1.5%;
+        }
+        
+        .row .col:first-child {
+            margin-left:0;
+        }
+        
+        
+        
+        .span_1, .min {
+            width:32.0%;
+        }
+        .span_2, .med{
+            width:66.0%;
+        }
+        .span_3 {
+            margin-left:0;
+            width:100%;
+        }
+    }
+
