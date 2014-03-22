@@ -6,11 +6,16 @@
  */
  
  
+ .page{
+    margin: 0 auto;
+    max-width: 95%;
+ }
 
 /* Reusable column setup */
 .col {
     border:0px solid rgba(0,0,0,0);
     float:left;
+    margin-top: .5em;
     -webkit-box-sizing:border-box;
     -moz-box-sizing:border-box;
     box-sizing:border-box;
@@ -21,18 +26,18 @@
 
 
 
-    /* 1. 1 Column Grid 0px - 399px 
+    /* 1. 1 Column Grid 0px - 418px 
     ----------------------------------------------------------------------------- 
     
     Span 1:    100%
     
     ----------------------------------------------------------------------------- */
 
-    @media screen and (min-width: 0px) and (max-width: 399px) {
+    @media screen and (min-width: 0px) and (max-width: 418px) {
         
         .col {
             margin-left:0%;
-        	padding:0 1.5%;
+            padding:0 1.5%;
         }
         
         .row .col:first-child {
@@ -49,25 +54,26 @@
         }
         */
         
-        .span_1, .min, .med, .max {
+        .span_1, .min, .two, .half, 
+        .one, .med, .header, .half {
             margin-left:0;
             width:100%;
         }
     }
 
-    /* 2. 2 Column Grid 400px - 898px 
+    /* 2. 2 Column Grid 419px - 659px 
     ----------------------------------------------------------------------------- 
     
-    Span 1:    49.0%
+    Span 1:    49.5%
     Span 2:    100%
     
     ----------------------------------------------------------------------------- */
 
-    @media screen and (min-width: 400px) and (max-width: 898px) {
+    @media screen and (min-width: 419px) and (max-width: 659px) {
         
         .col {
-            margin-left:0%;
-        	padding:0 1.5%;
+            margin-left:0.5%;
+            padding:0 0.5%;
         }
         
         .row .col:first-child {
@@ -76,29 +82,32 @@
         
         
         
-        .span_1, .med{
-            width:49.0%;
+        .span_1, .min, .one, .half {
+            width:49.5%;
         }
-        .span_2 {
+        .span_2, .med,  {
             margin-left:0;
             width:100%;
         }
     }
 
-    /* 3. 3 Column Grid 899px - Infinity 
+    /* 3. 6 Column Grid 660px - Infinity 
     ----------------------------------------------------------------------------- 
     
-    Span 1:    32.0%
-    Span 2:    66.0%
-    Span 3:    100%
+    Span 1:    16.25%
+    Span 2:    33.0%
+    Span 3:    49.75%
+    Span 4:    66.5%
+    Span 5:    83.25%
+    Span 6:    100%
     
     ----------------------------------------------------------------------------- */
 
-    @media screen and (min-width: 899px) {
+    @media screen and (min-width: 660px) {
         
         .col {
-            margin-left:0%;
-        	padding:0 1.5%;
+            margin-left:0.25%;
+            padding:0 0%;
         }
         
         .row .col:first-child {
@@ -108,12 +117,21 @@
         
         
         .span_1, .min {
-            width:32.0%;
+            width:16.25%;
         }
-        .span_2, .med{
-            width:66.0%;
+        .span_2, .one {
+            width:33.0%;
         }
-        .span_3 {
+        .span_3, .half {
+            width:49.75%;
+        }
+        .span_4, .two {
+            width:66.5%;
+        }
+        .span_5, .med {
+            width:83.25%;
+        }
+        .span_6, .max, .header {
             margin-left:0;
             width:100%;
         }
