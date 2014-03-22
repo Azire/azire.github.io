@@ -8,21 +8,21 @@ body{
 
 /* Set Your Own Margin & Padding */
 h2, h3, p{
-	margin: 5px 0;
+	margin: .375em 0;
 }
 
 /* Layout for Style Tile*/
 
 
 section {
-	margin: 20px 0;
+	margin: 1.25em 0;
 }
 
 h1{
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: 600;
 	font-size: 2.4em;
-	margin: 5px 0;
+	margin: .375em 0;
 	color: #dcdcdc;
 }
 
@@ -35,6 +35,22 @@ h2{
 h3{
 	font-family: 'Duru Sans', sans-serif;
 	font-size: 1.3em;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link{
+	color: #9932cc;
+}
+
+a:visited{
+	color: #bda0cb;
+}
+
+a:hover{
+	color: #8cc864;
 }
 
 /* Navigation Styling */
@@ -88,40 +104,89 @@ nav a:hover {
 /* Text box fills and border */
 
 #selfie {
-	margin: 1.25em 0 0 0;
 	width: 100%;
 	padding: 0;
-	border-radius: 20px 0 20px 0;
+	border-radius: 1.25em 0 1.25em 0;
 }
 
-.text_box1 {
-
-	margin: 20px 0 0 0;
-	background: rgb(78, 144, 207);
-	border-radius: 0 20px 0 20px;
-	padding: 20px;
+.box1, .box2, .link_box {
+	padding: 10px 1.25em;
 }
 
-.text_box2 {
-	margin: 20px 0 0 0;
-	background: rgb(193, 82, 97);
-	border-radius: 20px 0 20px 0;
-	padding: 20px;
+.box1 {
+	background: #dcdcdc;
+	border-radius: 0 1.25em 0 1.25em;
+	color: #2e2e2e;
+}
+
+.box2 {
+	background: #2e2e2e;
+	border-radius: 1.25em 0 1.25em 0;
 }
 
 .link_box {
-	margin: 20px 0 0 0;
-	background: rgb(154, 175, 105);
-	border-radius: 0 20px 0 20px;
-	padding: 20px;
+	margin-top: .125em;
+	background: #8cc864;
+	border-radius: 0 1.25em 0 1.25em;
 }
 
 .link_box > h2 {
 	position: relative;
-	top: -15px;
+	top: .25em;
 	right: 0;
 	background: url("../img/linen.png") repeat;
-	width: 100%;
-	padding: 5px 10px 5px 10px;
+	width: 95%;
+	padding: .375em .75em .375em .75em;
+	color: #8cc864;
+}
+
+/* Resume styling */
+.event{
+	height: 327px;
+	background: url("../img/resume/event.jpg") no-repeat;
+	background-size: cover;
+	border-radius: 0 1.25em 0 1.25em;
+}
+
+.portrait{
+	height: 327px;
+	background: url("../img/resume/port.jpg") no-repeat;
+	background-size: cover;
+	border-radius: 1.25em 0 1.25em 0;
+}
+
+.art {
+	height: 327px;
+	background: url("../img/resume/art.jpg") no-repeat;
+	background-size: cover;
+	border-radius: 1.25em 0 1.25em 0;
+}
+
+.night{
+	height: 327px;
+	background: url("../img/resume/night.jpg") no-repeat;
+	background-size: cover;
+	border-radius: 0 1.25em 0 1.25em;
+}
+
+.event h3, .art h3{
+	margin: 30px 0;
+	background: #2e2e2e;
 	color: rgb(154, 175, 105);
+	width: 20%;
+	padding: .375em 1.25em;
+	border-radius: 0 1.25em 1.25em 0;
+	font-weight: lighter;
+}
+
+.portrait h3, .night h3{
+	float: right;
+	text-align: right;
+	margin: 30px 0;
+	background: #2e2e2e;
+	color: rgb(154, 175, 105);
+	width: 20%;
+	padding: .375em 1.25em;
+	border-radius: 1.25em 0 0 1.25em;
+	font-weight: lighter;
 }
