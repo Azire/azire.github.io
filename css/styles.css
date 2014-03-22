@@ -97,6 +97,13 @@ nav a:hover {
 
 ul{
 	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	margin: 0;
+	padding: 0;
 }
 /* adjust start of content because of fixed nav */
 
@@ -127,6 +134,7 @@ ul{
 
 .box2 {
 	background: #2e2e2e;
+	color: #dcdcdc;
 	border-radius: 1.25em 0 1.25em 0;
 }
 
